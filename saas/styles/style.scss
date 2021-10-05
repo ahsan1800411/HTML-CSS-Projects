@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+@import "./mixins.scss";
+
+.first {
+  @include font-style-text(rgb(100, 93, 93), yellow, border-radius, 4rem);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second {
+  @include font-style-text(tomato);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 378px/1920px * 100%;
+}
+
+div {
+  span {
+    font-size: 2rem;
+    &:hover {
+      background-color: aqua;
+    }
+  }
+}
+
+.name {
+  font-size: 4rem;
+  color: tomato;
+}
+
+.program {
+  @extend .name;
+}

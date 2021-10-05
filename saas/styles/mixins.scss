@@ -1,0 +1,18 @@
+@mixin font-style-text(
+  $color,
+  $backgroundColor: transparent,
+  $property: null,
+  $value: null
+) {
+  @if $backgroundColor != transparent {
+    background-color: $backgroundColor;
+  }
+
+  @if $property!=null {
+    #{$property}: $value;
+  }
+
+  font-size: $major-font;
+
+  color: $color;
+}
